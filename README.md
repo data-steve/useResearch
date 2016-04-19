@@ -24,15 +24,14 @@ to install the development version:
 Example
 =======
 
-***Steps***
-1. Set up a Google Form with a single text box (see browseURL('https://goo.gl/jmHuLO')
-2. Get the url from the form via:
-   googleformer::make_url('https://docs.google.com/forms/d/1tz2RPftOLRCQrGSvgJTRELrd9sdIrSZ_kxfoFdHiqD4/viewform?usp=send_form')
-3. Assign the url to the object `url` below:
 
-    .google_url <- 'INSERT GOOGLE FORM URL HERE'
+Step 1. Set up a Google Form with a single text box (see browseURL('https://goo.gl/jmHuLO')
+Step 2. Get the url from the form via: `googleformer::make_url('https://docs.google.com/forms/d/1tz2RPftOLRCQrGSvgJTRELrd9sdIrSZ_kxfoFdHiqD4/viewform?usp=send_form')`
+Step 3. Assign the url to the object `url` below:
 
-4. Add tracking to the functions you desire in the space below using the `pingify`
+    .ping <- useResearch::gformr('INSERT GOOGLE FORM URL HERE')
+
+Step 4. Add tracking to the functions you desire in the space below using the `pingify`
    function.  Remember to reassign the function back to itself as in the example.
 
 **Attention**: We encourage the developer to add tracking responsibly, not simply out of
@@ -49,12 +48,12 @@ Note: If you wish to add a batch of functions you can batch add them via the
 The contents will be printed to the console and attempted to be copied
 to your clipboard for easy pasting.
 
-    myfun_1 <- useResearch::pingr(myfun_1, url = .google_url)   Replace this function assignment with your own
-    myfun_2 <- useResearch::pingr(myfun_2, url = .google_url)   Replace this function assignment with your own
+    myfun_1 <- useResearch::pingr(myfun_1)   # Replace this function assignment with your own
+    myfun_2 <- useResearch::pingr(myfun_2)   # Replace this function assignment with your own
 
-5. Add the `useResearch` package to the Imports field of the 'DESCRIPTION' file.
-6. Adjust documentation if needed (We use `devtools::document` and DO NOT need to adjust)
-7. Push to GitHub, Build, or place in a repo.  Each time a useResearched
+Step 5. Add the `useResearch` package to the Imports field of the 'DESCRIPTION' file.
+Step 6. Adjust documentation if needed (We use `devtools::document` and DO NOT need to adjust)
+Step 7. Push to GitHub, Build, or place in a repo.  Each time a useResearched
    function is used by a user the form will receive a response with the
    function name used and a time stamp.
 
@@ -62,11 +61,9 @@ to your clipboard for easy pasting.
 ***Stop/Alter User Monitoring***
 
 You can stop monitoring or change function monitoring by following these 3 steps:
-  (1) altering, removing this file from the package, or adding
-      `zzz_useResearch.R` to the '.Rbuildignore' file;
-  (2) removing `useResearch` from the Imports field in the
-      'DESCRIPTION' file (If you want to stop monitoring); and then
-  (3) rebuilding/pushing to the hosting repo
+- altering, removing this file from the package, or adding `zzz_useResearch.R` to the '.Rbuildignore' file;
+- removing `useResearch` from the Imports field in the 'DESCRIPTION' file (If you want to stop monitoring); and then
+- rebuilding/pushing to the hosting repo
 
 Google Forms can also be turned off to stop receiving responses.
 
