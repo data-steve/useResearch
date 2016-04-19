@@ -5,9 +5,10 @@
 #' @param url the url of the google form to be pinged
 #' @param \ldots the function(s) to be activated
 #' @export
-#' @examples
+#' @examples \dontrun{
 #' batch_process(url = "dummy_url", "fun1", "fun2")
 #' # the output is already copied to clipboard on most systems
+#' }
 batch_process <- function(url, ...){
   if(missing(...)) {
     stop("please insert functions to be activated")
