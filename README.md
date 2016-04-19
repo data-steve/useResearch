@@ -1,4 +1,6 @@
 
+<a href='http://www.freepik.com/free-vector/male-and-female-avatars_766955.htm'>Designed by Freepik</a>
+
 [![Build
 Status](https://travis-ci.org/data-steve/useResearch.svg?branch=master)](https://travis-ci.org/data-steve/useResearch)
 
