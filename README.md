@@ -1,4 +1,7 @@
 
+
+![](/inst/useRs.jpg)
+
 <a href='http://www.freepik.com/free-vector/male-and-female-avatars_766955.htm'>Designed by Freepik</a>
 
 [![Build
