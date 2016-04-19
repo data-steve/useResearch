@@ -1,0 +1,15 @@
+citHeader("To cite pacman in publications, please use:")
+
+
+citEntry(entry = "manual",
+         title = "{useResearch}: {P}rovides User Research Capabilities to the {R} Community at the Functional Level",
+         author = "Steve Simpson and Tyler W. Rinker",
+         address = "Buffalo, New York",
+         note = "version 0.0.1",
+         year = "2016",
+         url = "http://github.com/data-steve/useResearch",
+         textVersion  = paste("Simpson, S. & Rinker, T. W.(2016).",
+                              "useResearch: Provides user research capabilities to the R community at the functional level.",
+                              "version 0.0.1. Buffalo, New York.",
+                              "http://github.com/data-steve/useResearch")
+)

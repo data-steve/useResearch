@@ -15,7 +15,9 @@ batch_process(url, ...)
 Creates Code to Activate Multiple Functions and Copies to Clipboard.
 }
 \examples{
+\dontrun{
 batch_process(url = "dummy_url", "fun1", "fun2")
 # the output is already copied to clipboard on most systems
+}
 }
 

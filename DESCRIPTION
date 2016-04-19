@@ -4,11 +4,12 @@ Title: Provides User Research Capabilities to the R Community at the Functional
 Version: 0.0.1
 Authors@R: c(person("Steve", "Simpson", email = "steven.troy.simpson@gmail.com", role = c("aut", "cre", "ctb")), person("Tyler", "Rinker", role = c("aut", "ctb"),
         email = "tyler.rinker@gmail.com"))
+Author: Steve Simpson [aut, cre, ctb], Tyler Rinker [aut, ctb]        
 Maintainer: Steve Simpson <steven.troy.simpson@gmail.com>
 Description: Tools that provide user research capabilities to the R Community at
     the functional Level. R developers can enable any function in their package with
-    the ability track its use via a pingback signal to a ['Google Form'](https://
-    www.google.com/forms/about/), which they create and maintain for this purpose.
+    the ability track its use via a pingback signal to a Google Form, which they 
+    create and maintain for this purpose.
 Depends:
     R (>= 3.2.4)
 Imports:
@@ -22,3 +23,6 @@ License: GPL-2
 LazyData: TRUE
 Roxygen: list(wrap = FALSE)
 RoxygenNote: 5.0.1
+BugReports: https://github.com/data-steve/useResearch/issues?state=open
+URL: https://github.com/data-steve/useResearch
+
