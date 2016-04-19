@@ -26,10 +26,13 @@ Example
 
 
 Step 1. Set up a Google Form with a single text box (see browseURL('https://goo.gl/jmHuLO')
+
 Step 2. Get the url from the form via: `googleformer::make_url('https://docs.google.com/forms/d/1tz2RPftOLRCQrGSvgJTRELrd9sdIrSZ_kxfoFdHiqD4/viewform?usp=send_form')`
+
 Step 3. Assign the url to the object `url` below:
 
     .ping <- useResearch::gformr('INSERT GOOGLE FORM URL HERE')
+
 
 Step 4. Add tracking to the functions you desire in the space below using the `pingify`
    function.  Remember to reassign the function back to itself as in the example.
@@ -51,8 +54,11 @@ to your clipboard for easy pasting.
     myfun_1 <- useResearch::pingr(myfun_1)   # Replace this function assignment with your own
     myfun_2 <- useResearch::pingr(myfun_2)   # Replace this function assignment with your own
 
+
 Step 5. Add the `useResearch` package to the Imports field of the 'DESCRIPTION' file.
+
 Step 6. Adjust documentation if needed (We use `devtools::document` and DO NOT need to adjust)
+
 Step 7. Push to GitHub, Build, or place in a repo.  Each time a useResearched
    function is used by a user the form will receive a response with the
    function name used and a time stamp.
