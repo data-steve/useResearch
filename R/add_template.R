@@ -4,7 +4,8 @@
 #'
 #' @param rdir the directory to copy the template to
 #' @export
-#' @examples \dontrun{
+#' @examples
+#' \dontrun{
 #' add_template()
 #' }
 add_template <- function(rdir = "./R") {

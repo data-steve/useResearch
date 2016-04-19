@@ -5,7 +5,8 @@
 #' @param url the url of the google form to be pinged
 #' @param \ldots the function(s) to be activated
 #' @export
-#' @examples \dontrun{
+#' @examples
+#' \dontrun{
 #' batch_process(url = "dummy_url", "fun1", "fun2")
 #' # the output is already copied to clipboard on most systems
 #' }
