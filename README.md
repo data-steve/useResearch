@@ -27,7 +27,9 @@ Example
 
 Step 1. Set up a Google Form with a single text box (see browseURL('https://goo.gl/jmHuLO')
 
-Step 2. Get the url from the form via: `googleformer::make_url('https://docs.google.com/forms/d/1tz2RPftOLRCQrGSvgJTRELrd9sdIrSZ_kxfoFdHiqD4/viewform?usp=send_form')`
+Step 2. Get the url from the form via:
+
+    googleformer::make_url('https://docs.google.com/forms/d/1tz2RPftOLRCQrGSvgJTRELrd9sdIrSZ_kxfoFdHiqD4/viewform?usp=send_form')
 
 Step 3. Assign the url to the object `url` below:
 
