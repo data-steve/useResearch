@@ -64,7 +64,7 @@ myfun_2 <- useResearch::pingr(myfun_2)  # Replace this function assignment with 
 #  1. The Project README
 #  2. Using an `.onLoad` statement as follows...
 
-.onLoad <- function(libname, pkgname) {
+.onAttach <- function(libname, pkgname) {
   packageStartupMessage("This is the dev version of ___YOUR PACKAGE____\n",
                         "useResearch functionality is being utilized.\n"
   )
