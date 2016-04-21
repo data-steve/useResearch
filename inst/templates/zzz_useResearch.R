@@ -40,7 +40,7 @@ myfun_2 <- useResearch::pingr(myfun_2)  # Replace this function assignment with 
 
 #  5. Add the `useResearch` package to the Imports field of the 'DESCRIPTION' file.
 #  6. Adjust documentation if needed (We use `devtools::document` and DO NOT need to adjust)
-#  7. Push to GitHub, Build, or place in a repo.  Each time a useResearched
+#  7. Push to GitHub, Build, or place in a repo.  Each time a useResearch-ed
 #     function is used by a user the form will receive a response with the
 #     function name used and a time stamp.
 
