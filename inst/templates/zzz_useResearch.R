@@ -15,6 +15,8 @@
 #                           , do = 'get')`
 #  3. Assign the url to the object `url` below:
 
+# Assumes roxygen use or add useResearch manually
+#' @importFrom useResearch gformr pingr
 
 .ping <- useResearch::gformr('INSERT GOOGLE FORM URL HERE')
 
@@ -38,8 +40,16 @@
 myfun_1 <- useResearch::pingr(myfun_1)  # Replace this function assignment with your own
 myfun_2 <- useResearch::pingr(myfun_2)  # Replace this function assignment with your own
 
-#  5. Add the `useResearch` package to the Imports field of the 'DESCRIPTION' file.
-#  6. Adjust documentation if needed (We use `devtools::document` and DO NOT need to adjust)
+#  5. Add the `useResearch` AND `httr` packages to the Imports field of the 'DESCRIPTION' file.
+#  6. In each .R script file wrap any examples with \dontrun{...} as the code chunk below shows.
+#     Make sure \dontrun{  starts on line just under @examples.
+
+#` @examples
+#` \dontrun{
+#`  something <- your_example(x)
+#` }
+
+#  7. Adjust documentation if needed (We use `devtools::document` and DO NOT need to adjust)
 #  7. Push to GitHub, Build, or place in a repo.  Each time a useResearch-ed
 #     function is used by a user the form will receive a response with the
 #     function name used and a time stamp.
@@ -49,9 +59,9 @@ myfun_2 <- useResearch::pingr(myfun_2)  # Replace this function assignment with 
 #  You can stop monitoring or change function monitoring by following these 3 steps:
 #    (1) altering, removing this file from the package, or adding
 #        `zzz_useResearch.R` to the '.Rbuildignore' file;
-#    (2) removing `useResearch` from the Imports field in the
+#    (2) removing `useResearch` AND `httr` from the Imports field in the
 #        'DESCRIPTION' file (If you want to stop monitoring); and then
-#    (3) rebuilding/pushing to the hosting repo
+#    (3) rebuilding with devtools and pushing to the hosting repo
 #
 #  Google Forms can also be turned off to stop receiving responses.
 
