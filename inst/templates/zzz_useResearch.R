@@ -15,10 +15,14 @@
 #                           , do = 'get')`
 #  3. Assign the url to the object `url` below:
 
-# Assumes roxygen use or add useResearch manually
-#' @importFrom useResearch gformr pingr
+# Assumes roxygen use or add useResearch manually as shown below
+# ` #' @importFrom useResearch gformr pingr `
 
 .ping <- useResearch::gformr('INSERT GOOGLE FORM URL HERE')
+
+# check that .ping() is sending, both by checking Google Form and check_form_works()
+useResearch::check_form_works( .ping("testing 1, 2, 3") )
+# should see "All good" in console
 
 #  4. Add tracking to the functions you desire in the space below using the `pingr`
 #     function.  Remember to reassign the function back to itself as in the example.

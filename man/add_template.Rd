@@ -4,10 +4,12 @@
 \alias{add_template}
 \title{Copies Template for User Research Process}
 \usage{
-add_template(rdir = "./R")
+add_template(rdir = "./R", open = TRUE)
 }
 \arguments{
 \item{rdir}{the directory to copy the template to}
+
+\item{open}{logical var to indicate whether to open file for editing}
 }
 \description{
 Copies Template for User Research Process.
